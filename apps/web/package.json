@@ -1,16 +1,14 @@
 {
-  "name": "web",
+  "name": "task-manager",
   "version": "0.1.0",
   "private": true,
-
+  "packageManager": "pnpm@11.21.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint"
   },
   "dependencies": {
-    "@repo/common-types": "workspace:*",
     "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.111.0",
     "lucide-react": "^1.28.0",

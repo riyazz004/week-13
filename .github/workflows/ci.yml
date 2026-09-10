@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Install dependencies
@@ -35,3 +35,6 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+           NEXT_PUBLIC_SUPABASE_URL= https://mggeiewmexohvdnqjcac.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1nZ2VpZXdtZXhvaHZkbnFqY2FjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU0MDI1MTQsImV4cCI6MjEwMDk3ODUxNH0.2wrI7s2NtZ4MqQyubq-m3L6eOuyXTyh4gYMdiElPHik
